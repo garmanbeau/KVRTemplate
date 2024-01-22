@@ -1,4 +1,4 @@
-namespace KVRTemplate.Models
+namespace BulkyWeb.Models
 {
     public class ErrorViewModel
     {
