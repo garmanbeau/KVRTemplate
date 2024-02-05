@@ -1,110 +1,43 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
 <head>
-    <title>Biology Lab Results</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            margin: 20px 0;
-        }
+<style>
+    .centered-image {
+        max-width: 100%;
+        height: auto;
+    }
 
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
+    .intro-paragraph {
+        text-align: center;
+        margin: 20px 0;
+    }
 
-        th {
-            background-color: #f2f2f2;
+    .create-account-button {
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        width: 200px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+        .create-account-button:hover {
+            background-color: #45a049;
         }
-    </style>
+</style>
 </head>
 <body>
+    <img class="centered-image" src="https://png.pngtree.com/png-clipart/20230211/original/pngtree-vr-game-male-shouting-happy-png-image_8952597.png" alt="Introduction Image" />
 
-    <h1>About the Lab</h1>
-    <p>
-        Welcome to the Biology Lab! In this virtual reality environment, students are required to do x and y.
+    <p class="intro-paragraph">
+        Virtual Reality (VR) is an immersive technology that transports users to virtual worlds, providing a unique and interactive experience.
     </p>
 
-    <h2>Students' Scores</h2>
-
-    <!-- Display students' scores with additional columns -->
-    <table>
-        <tr>
-            <th>Student</th>
-            <th>Score</th>
-            <th>Time Spent</th>
-            <th>Wrong Selections</th>
-        </tr>
-        <!-- Example data -->
-        <tr>
-            <td>Student1</td>
-            <td>85%</td>
-            <td>30 minutes</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Student2</td>
-            <td>92%</td>
-            <td>25 minutes</td>
-            <td>1</td>
-        </tr>
-        <!-- Add more rows as needed -->
-    </table>
-
-    <h2>Time Spent Metrics</h2>
-
-    <!-- Table for time spent metrics -->
-    <table>
-        <tr>
-            <th>Student</th>
-            <th>Time Spent</th>
-            <th>Longest Time</th>
-            <th>Average Time</th>
-        </tr>
-        <!-- Example data -->
-        <tr>
-            <td>Student1</td>
-            <td>30 minutes</td>
-            <td>35 minutes</td>
-            <td>32 minutes</td>
-        </tr>
-        <tr>
-            <td>Student2</td>
-            <td>25 minutes</td>
-            <td>30 minutes</td>
-            <td>27 minutes</td>
-        </tr>
-        <!-- Add more rows as needed -->
-    </table>
-
-    <h2>Wrong Selections Metrics</h2>
-
-    <!-- Table for wrong selections metrics -->
-    <table>
-        <tr>
-            <th>Student</th>
-            <th>Wrong Selections</th>
-            <th>Most Wrong Selections (in one lab)</th>
-            <th>Average Wrong Selections</th>
-        </tr>
-        <!-- Example data  -->
-        <tr>
-            <td>Student1</td>
-            <td>3</td>
-            <td>2</td>
-            <td>2.5</td>
-        </tr>
-        <tr>
-            <td>Student2</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <!-- Add more rows as needed -->
-    </table>
-
+    <a href="/Home/Login" class="create-account-button">Create Account to Get Started</a>
 </body>

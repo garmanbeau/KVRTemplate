@@ -1,8 +1,8 @@
-﻿using KVRTemplate.Models;
+using BulkyWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace KVRTemplate.Controllers
+namespace BulkyWeb.Controllers
 {
     public class HomeController : Controller
     {
@@ -18,7 +18,17 @@ namespace KVRTemplate.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult Metrics()
         {
             return View();
         }
