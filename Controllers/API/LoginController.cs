@@ -39,8 +39,9 @@ namespace KVRTemplate.Controllers.apis
 
             string passwdHash = "zTYpKAMCoqYj12ahAoZU25RsI4XlPDizKX2nVphlnNzEXvkHqCZgGPrxDqx0W0ZDkXwJs8KGVE1b8mpU4BsG6Q==";
 
+            string pepper = Environment.GetEnvironmentVariable("PEPPER");
             //TODO: get passwdHash from the db and compare it
-            string passwordHash = PasswordHasher.ComputeHash(password, "pepper", 3);
+            string passwordHash = PasswordHasher.ComputeHash(password, pepper, 3);
             if (passwdHash != passwordHash) //TODO: password hash should be a variable
                 throw new Exception("Username or password did not match.");
 
